@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main () {
+    int rate,owned,quant,total=0;
+    cin >> rate>>owned>>quant;
+    for (int i=1;i<=quant;i++) {
+        total+=rate*i;
+    }
+    if (owned>total)
+        cout<<"0";
+    else
+        cout << total-owned; 
+}
