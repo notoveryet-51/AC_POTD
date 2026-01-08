@@ -1,0 +1,14 @@
+GFG: Reverse string using stack
+
+class Solution {
+  public:
+    string reverse(const string& S) {
+        // code here
+        int n=S.length();
+        string s1(n,' ');
+        for (int i=n-1; i>=0; i--) {
+            s1[n-1-i]=S[i];
+        }
+        return s1;
+    }
+};
